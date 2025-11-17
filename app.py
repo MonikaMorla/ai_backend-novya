@@ -30,7 +30,9 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "https://black-dune-047f16610.3.azurestaticapps.net",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
